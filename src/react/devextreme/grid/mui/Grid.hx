@@ -11,7 +11,7 @@ typedef GridProps<TRow> = {
 	var rows:Array<TRow>;
 
 	/** Specifies for which row fields columns are created. */
-	var columns: Array<Column<TRow>>;
+	var columns:Array<Column<TRow>>;
 
 	/** Specifies the function used to get a unique row identifier. */
 	@:optional var getRowId:TRow->EitherType<Int, String>;
