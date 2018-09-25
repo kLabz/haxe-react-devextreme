@@ -31,5 +31,6 @@ extern class Grid<TRow> extends ReactComponentOfProps<GridProps<TRow>> {
 
 /** A component that renders the grid root layout. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Grid.Root')
-extern class GridRoot<TProps:GridRootProps> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class GridRoot extends ReactComponentOfProps<GridRootProps> {}
 

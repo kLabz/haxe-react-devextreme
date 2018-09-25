@@ -95,29 +95,36 @@ extern class Table<TRow> extends ReactComponentOfProps<TableProps<TRow>> {
 
 /** A component that renders a table data cell. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.Cell')
-extern class TableCell<TRow, TProps:TableDataCellProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableCell<TRow> extends ReactComponentOfProps<TableDataCellProps<TRow>> {}
 
 /** A component that renders a table data row. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.Row')
-extern class TableRow<TRow, TProps:TableDataRowProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableRow<TRow> extends ReactComponentOfProps<TableDataRowProps<TRow>> {}
 
 /** A component that renders a table cell when the table is empty. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.NoDataCell')
-extern class TableNoDataCell<TRow, TProps:TableNoDataCellProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableNoDataCell<TRow> extends ReactComponentOfProps<TableNoDataCellProps<TRow>> {}
 
 /** A component that renders a table row when the table is empty. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.NoDataRow')
-extern class TableNoDataRow<TRow, TProps:TableRowProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableNoDataRow<TRow> extends ReactComponentOfProps<TableRowProps<TRow>> {}
 
 /** A component that renders a stub table row. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.StubRow')
-extern class TableStubRow<TRow, TProps:TableRowProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableStubRow<TRow> extends ReactComponentOfProps<TableRowProps<TRow>> {}
 
 /** A component that renders a stub table cell. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.StubCell')
-extern class TableStubCell<TRow, TProps:TableCellProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableStubCell<TRow> extends ReactComponentOfProps<TableCellProps<TRow>> {}
 
 /** A component that renders a stub table header cell. */
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table.StubHeaderCell')
-extern class TableStubHeaderCell<TRow, TProps:TableCellProps<TRow>> extends ReactComponentOfProps<TProps> {}
+@:acceptsMoreProps
+extern class TableStubHeaderCell<TRow> extends ReactComponentOfProps<TableCellProps<TRow>> {}
 

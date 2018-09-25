@@ -1,9 +1,9 @@
 {
   "name": "react-devextreme",
-  "description": "TODO",
-  "version": "0.1.0",
-  "releasenote": "TODO",
-  "url": "https://gitlab.com/k-labz/haxe-oss/haxe-react-devextreme",
+  "description": "Externs for react-devextreme",
+  "version": "0.1.1",
+  "releasenote": "First release",
+  "url": "https://github.com/kLabz/haxe-react-devextreme",
   "license": "MIT",
   "tags": [],
   "classPath": "src",
