@@ -1,8 +1,8 @@
 {
   "name": "react-devextreme",
   "description": "Externs for react-devextreme",
-  "version": "0.1.1",
-  "releasenote": "First release",
+  "version": "0.2.0",
+  "releasenote": "Update for react-next 1.103.0",
   "url": "https://github.com/kLabz/haxe-react-devextreme",
   "license": "MIT",
   "tags": [],
