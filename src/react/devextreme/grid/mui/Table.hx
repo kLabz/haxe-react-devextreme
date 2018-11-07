@@ -1,7 +1,7 @@
 package react.devextreme.grid.mui;
 
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 import react.devextreme.grid.Table.TableColumnExtension;
 import react.devextreme.grid.Table.TableDataCellProps;
 import react.devextreme.grid.Table.TableDataRowProps;
@@ -15,40 +15,40 @@ typedef TableProps<TRow> = {
 	@:optional var columnExtensions:Array<TableColumnExtension>;
 
 	/** A component that renders a table. */
-	@:optional var tableComponent:ReactNode;
+	@:optional var tableComponent:ReactType;
 
 	/** A component that renders a table head. */
-	@:optional var headComponent:ReactNode;
+	@:optional var headComponent:ReactType;
 
 	/** A component that renders a table body. */
-	@:optional var bodyComponent:ReactNode;
+	@:optional var bodyComponent:ReactType;
 
 	/** A component that renders a table's container. */
-	@:optional var containerComponent:ReactNode;
+	@:optional var containerComponent:ReactType;
 
 	/** A component that renders a table cell. */
-	@:optional var cellComponent:ReactNodeOf<TableDataCellProps<TRow>>;
+	@:optional var cellComponent:ReactTypeOf<TableDataCellProps<TRow>>;
 
 	/** A component that renders a table row. */
-	@:optional var rowComponent:ReactNodeOf<TableDataRowProps<TRow>>;
+	@:optional var rowComponent:ReactTypeOf<TableDataRowProps<TRow>>;
 
 	/** A component that renders a table cell when the table is empty. */
-	@:optional var noDataCellComponent:ReactNodeOf<TableNoDataCellProps<TRow>>;
+	@:optional var noDataCellComponent:ReactTypeOf<TableNoDataCellProps<TRow>>;
 
 	/** A component that renders a table row when the table is empty. */
-	@:optional var noDataRowComponent:ReactNodeOf<TableRowProps<TRow>>;
+	@:optional var noDataRowComponent:ReactTypeOf<TableRowProps<TRow>>;
 
 	/** A component that renders a stub table row if the row type is not
 	 * recognized. */
-	@:optional var stubRowComponent:ReactNodeOf<TableRowProps<TRow>>;
+	@:optional var stubRowComponent:ReactTypeOf<TableRowProps<TRow>>;
 
 	/** A component that renders a stub table cell if the cell value is not
 	 * provided. */
-	@:optional var stubCellComponent:ReactNodeOf<TableCellProps<TRow>>;
+	@:optional var stubCellComponent:ReactTypeOf<TableCellProps<TRow>>;
 
 	/** A component that renders a stub header cell if the cell value is not
 	 * provided. */
-	@:optional var stubHeaderCellComponent:ReactNodeOf<TableCellProps<TRow>>;
+	@:optional var stubHeaderCellComponent:ReactTypeOf<TableCellProps<TRow>>;
 
 	/** An object that specifies the localization messages. */
 	@:optional var messages:TableLocalizationMessages;
@@ -60,16 +60,16 @@ typedef TableProps<TRow> = {
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Table')
 extern class Table<TRow> extends ReactComponentOfProps<TableProps<TRow>> {
 	/** A component that renders a table. */
-	public static var Table:ReactNode;
+	public static var Table:ReactType;
 
 	/** A component that renders a table head. */
-	public static var TableHead:ReactNode;
+	public static var TableHead:ReactType;
 
 	/** A component that renders a table body. */
-	public static var TableBody:ReactNode;
+	public static var TableBody:ReactType;
 
 	/** A component that renders a table's container. */
-	public static var Container:ReactNode;
+	public static var Container:ReactType;
 
 	/** A component that renders a table data cell. */
 	public static inline var Cell = TableCell;

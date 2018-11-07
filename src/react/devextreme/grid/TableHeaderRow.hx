@@ -1,7 +1,7 @@
 package react.devextreme.grid;
 
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 import react.devextreme.grid.Grid.Column;
 import react.devextreme.grid.Table.TableCellProps;
 import react.devextreme.grid.Table.TableRowProps;
@@ -69,10 +69,10 @@ typedef TableHeaderRowLocalizationMessages = {
 
 typedef TableHeaderRowProps<TRow> = {
 	/** A component that renders a header cell. */
-	var cellComponent:ReactNodeOf<TableHeaderRowCellProps<TRow>>;
+	var cellComponent:ReactTypeOf<TableHeaderRowCellProps<TRow>>;
 
 	/** A component that renders a header row. */
-	var rowComponent:ReactNodeOf<TableRowProps<TRow>>;
+	var rowComponent:ReactTypeOf<TableRowProps<TRow>>;
 
 	/** Specifies whether to render controls that toggle the column's sorting
 	 * state. Requires the SortingState dependency. */

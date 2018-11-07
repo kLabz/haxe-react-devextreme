@@ -1,13 +1,13 @@
 package react.devextreme.grid.mui;
 
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 
 import react.devextreme.grid.Toolbar.ToolbarRootProps;
 
 typedef ToolbarProps = {
 	/** A component that renders the toolbar root element. */
-	@:optional var rootComponent:ReactNodeOf<ToolbarRootProps>;
+	@:optional var rootComponent:ReactTypeOf<ToolbarRootProps>;
 }
 
 /** A plugin that renders the Grid toolbar. */

@@ -2,7 +2,7 @@ package react.devextreme.grid;
 
 import haxe.extern.EitherType;
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 import react.devextreme.grid.Grid.Column;
 
 @:enum abstract TableColumnAlign(String) to String {
@@ -109,7 +109,7 @@ typedef TableRowProps<TRow> = {
 	/** A table row. */
 	var tableRow:TableRow<TRow>;
 	/** A React node used to render a table row. */
-	var children:ReactNode;
+	var children:ReactType;
 }
 
 /** Describes properties passed to a component that renders a table row. */
@@ -129,40 +129,40 @@ typedef TableProps<TRow> = {
 	@:optional var columnExtensions:Array<TableColumnExtension>;
 
 	/** A component that renders a table. */
-	var tableComponent:ReactNode;
+	var tableComponent:ReactType;
 
 	/** A component that renders a table head. */
-	var headComponent:ReactNode;
+	var headComponent:ReactType;
 
 	/** A component that renders a table body. */
-	var bodyComponent:ReactNode;
+	var bodyComponent:ReactType;
 
 	/** A component that renders a table's container. */
-	var containerComponent:ReactNode;
+	var containerComponent:ReactType;
 
 	/** A component that renders a table cell. */
-	var cellComponent:ReactNodeOf<TableDataCellProps<TRow>>;
+	var cellComponent:ReactTypeOf<TableDataCellProps<TRow>>;
 
 	/** A component that renders a table row. */
-	var rowComponent:ReactNodeOf<TableDataRowProps<TRow>>;
+	var rowComponent:ReactTypeOf<TableDataRowProps<TRow>>;
 
 	/** A component that renders a table cell when the table is empty. */
-	var noDataCellComponent:ReactNodeOf<TableNoDataCellProps<TRow>>;
+	var noDataCellComponent:ReactTypeOf<TableNoDataCellProps<TRow>>;
 
 	/** A component that renders a table row when the table is empty. */
-	var noDataRowComponent:ReactNodeOf<TableRowProps<TRow>>;
+	var noDataRowComponent:ReactTypeOf<TableRowProps<TRow>>;
 
 	/** A component that renders a stub table row if the row type is not
 	 * recognized. */
-	var stubRowComponent:ReactNodeOf<TableRowProps<TRow>>;
+	var stubRowComponent:ReactTypeOf<TableRowProps<TRow>>;
 
 	/** A component that renders a stub table cell if the cell value is not
 	 * provided. */
-	var stubCellComponent:ReactNodeOf<TableCellProps<TRow>>;
+	var stubCellComponent:ReactTypeOf<TableCellProps<TRow>>;
 
 	/** A component that renders a stub header cell if the cell value is not
 	 * provided. */
-	var stubHeaderCellComponent:ReactNodeOf<TableCellProps<TRow>>;
+	var stubHeaderCellComponent:ReactTypeOf<TableCellProps<TRow>>;
 
 	/** An object that specifies the localization messages. */
 	@:optional var messages:TableLocalizationMessages;

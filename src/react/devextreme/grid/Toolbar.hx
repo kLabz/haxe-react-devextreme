@@ -1,7 +1,7 @@
 package react.devextreme.grid;
 
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 
 typedef ToolbarRootProps = {
 	/** A React node to be placed in the toolbar. */
@@ -10,7 +10,7 @@ typedef ToolbarRootProps = {
 
 typedef ToolbarProps = {
 	/** A component that renders the toolbar root element. */
-	var rootComponent:ReactNodeOf<ToolbarRootProps>;
+	var rootComponent:ReactTypeOf<ToolbarRootProps>;
 }
 
 /** A plugin that renders the Grid toolbar. */

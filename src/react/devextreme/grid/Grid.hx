@@ -2,7 +2,7 @@ package react.devextreme.grid;
 
 import haxe.extern.EitherType;
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 
 /** Defines the column configuration object. Used to display data stored in a
  * row. */
@@ -23,7 +23,7 @@ typedef Column<TRow> = {
 * layout. */
 typedef GridRootProps = {
 	/** A React node to be placed in the root layout. */
-	@:optional var children:ReactNode;
+	@:optional var children:ReactType;
 }
 
 typedef GridProps<TRow> = {
@@ -41,7 +41,7 @@ typedef GridProps<TRow> = {
 	@:optional var getCellValue:TRow->String->Any;
 
 	/** A component that renders the grid root layout. */
-	var rootComponent:ReactNodeOf<GridRootProps>;
+	var rootComponent:ReactTypeOf<GridRootProps>;
 }
 
 /** The Grid is a root container component designed to process and display data

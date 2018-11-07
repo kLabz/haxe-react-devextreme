@@ -2,7 +2,7 @@ package react.devextreme.grid.mui;
 
 import haxe.extern.EitherType;
 import react.ReactComponent;
-import react.ReactNode;
+import react.ReactType;
 import react.devextreme.grid.Grid.Column;
 import react.devextreme.grid.Grid.GridRootProps;
 
@@ -20,7 +20,7 @@ typedef GridProps<TRow> = {
 	@:optional var getCellValue:TRow->String->Any;
 
 	/** A component that renders the grid root layout. */
-	@:optional var rootComponent:ReactNodeOf<GridRootProps>;
+	@:optional var rootComponent:ReactTypeOf<GridRootProps>;
 }
 
 @:jsRequire('@devexpress/dx-react-grid-material-ui', 'Grid')
