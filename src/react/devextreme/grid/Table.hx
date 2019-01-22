@@ -170,6 +170,6 @@ typedef TableProps<TRow> = {
 /** A plugin that renders Grid data as a table. It contains the Table Row and
  * Table Cell components that can be extended by other plugins and provides
  * ways to customize table rows and columns. */
-@:jsRequire('@devextreme/dx-react-grid', 'Grid')
+@:jsRequire('@devextreme/dx-react-grid', 'Table')
 extern class Table<TRow> extends ReactComponentOfProps<TableProps<TRow>> {}
 
