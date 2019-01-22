@@ -1,4 +1,4 @@
-package react.devextreme.grid;
+package react.devextreme.grid.plugin;
 
 import react.ReactComponent;
 

@@ -5,7 +5,7 @@ import react.ReactType;
 import react.devextreme.grid.Table.TableRowProps;
 import react.devextreme.grid.TableHeaderRow.TableHeaderRowCellProps;
 import react.devextreme.grid.TableHeaderRow.TableHeaderRowLocalizationMessages;
-import react.devextreme.grid.SortingState.SortingDirection;
+import react.devextreme.grid.plugin.SortingState.SortingDirection;
 
 typedef TableHeaderRowProps<TRow> = {
 	/** A component that renders a header cell. */
