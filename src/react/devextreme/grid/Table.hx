@@ -1,6 +1,5 @@
 package react.devextreme.grid;
 
-import haxe.extern.EitherType;
 import react.ReactComponent;
 import react.ReactType;
 import react.devextreme.grid.Grid.Column;
@@ -36,7 +35,7 @@ typedef TableRow<TRow> = {
 	var type:String;
 
 	/** Specifies the associated row's ID. */
-	@:optional var rowId:EitherType<Int, String>;
+	@:optional var rowId:RowID;
 
 	/** Specifies the associated row. */
 	@:optional var row:TRow;

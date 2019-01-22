@@ -1,6 +1,5 @@
 package react.devextreme.grid.mui;
 
-import haxe.extern.EitherType;
 import react.ReactComponent;
 import react.ReactType;
 import react.devextreme.grid.Grid.Column;
@@ -14,7 +13,7 @@ typedef GridProps<TRow> = {
 	var columns:Array<Column<TRow>>;
 
 	/** Specifies the function used to get a unique row identifier. */
-	@:optional var getRowId:TRow->EitherType<Int, String>;
+	@:optional var getRowId:TRow->RowID;
 
 	/** Specifies the function used to get a cell's value. */
 	@:optional var getCellValue:TRow->String->Any;
