@@ -1,8 +1,8 @@
 {
   "name": "react-devextreme",
   "description": "Externs for react-devextreme",
-  "version": "0.3.0",
-  "releasenote": "Some fixes and some new components",
+  "version": "0.3.1",
+  "releasenote": "Fix IntegratedSorting's ColumnExtension",
   "url": "https://github.com/kLabz/haxe-react-devextreme",
   "license": "MIT",
   "tags": [],
